@@ -3,6 +3,7 @@ import { Play, CheckCircle, Shield, Clock, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import InteractiveQRDemo from '@/components/InteractiveQRDemo';
+import SolutionsShowcase from '@/components/SolutionsShowcase';
 import AIParticles from '@/components/ui/ai-particles';
 import AnimatedCounter from '@/components/ui/animated-counter';
 
@@ -174,6 +175,9 @@ const Index = () => {
           </div>
         </div>
       </main>
+      
+      {/* Solutions Showcase */}
+      <SolutionsShowcase />
     </div>
   );
 };
