@@ -8,51 +8,67 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sophisticated Dark Theme - QRS-Me AI */
+    --background: 240 8% 6%;
+    --foreground: 220 15% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 6% 8%;
+    --card-foreground: 220 15% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 6% 8%;
+    --popover-foreground: 220 15% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* AI-themed primary colors */
+    --primary: 217 91% 62%;
+    --primary-foreground: 240 8% 6%;
+    --primary-glow: 217 91% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 4% 12%;
+    --secondary-foreground: 220 15% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 4% 10%;
+    --muted-foreground: 220 10% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 258 89% 66%;
+    --accent-foreground: 240 8% 6%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 15% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 4% 15%;
+    --input: 240 4% 12%;
+    --ring: 217 91% 62%;
 
-    --radius: 0.5rem;
+    /* Header specific colors */
+    --header-bg: 240 12% 4%;
+    --header-glass: 240 8% 6%;
+    --nav-hover: 217 91% 62%;
+    --ai-indicator: 258 89% 66%;
 
-    --sidebar-background: 0 0% 98%;
+    /* Sophisticated gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-neural: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--accent) / 0.05));
+    --gradient-glow: radial-gradient(circle at center, hsl(var(--primary) / 0.3), transparent 70%);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Professional shadows */
+    --shadow-neural: 0 0 40px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 60px hsl(var(--primary) / 0.2);
+    --shadow-header: 0 8px 32px hsl(240 12% 4% / 0.8);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Smooth transitions */
+    --transition-sophisticated: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-glow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 240 6% 8%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 217 91% 62%;
+    --sidebar-primary-foreground: 240 8% 6%;
+    --sidebar-accent: 240 4% 12%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 240 4% 15%;
+    --sidebar-ring: 217 91% 62%;
   }
 
   .dark {
@@ -101,5 +117,113 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Neural Network Pattern Animation */
+  .neural-pattern {
+    background-image: 
+      radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.03) 2px, transparent 2px),
+      radial-gradient(circle at 40% 20%, hsl(var(--accent) / 0.02) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, hsl(var(--primary) / 0.02) 1px, transparent 1px),
+      radial-gradient(circle at 60% 70%, hsl(var(--accent) / 0.03) 2px, transparent 2px);
+    background-size: 100px 100px, 60px 60px, 80px 80px, 120px 120px;
+    background-position: 0 0, 30px 30px, 60px 10px, 90px 90px;
+    animation: neural-float 20s ease-in-out infinite;
+  }
+
+  @keyframes neural-float {
+    0%, 100% { background-position: 0 0, 30px 30px, 60px 10px, 90px 90px; }
+    50% { background-position: 20px 10px, 50px 20px, 40px 30px, 70px 70px; }
+  }
+
+  /* Logo pulse animation */
+  .logo-pulse {
+    animation: logo-pulse 3s ease-in-out;
+  }
+
+  @keyframes logo-pulse {
+    0% { filter: drop-shadow(0 0 0px hsl(var(--primary) / 0.5)); }
+    50% { filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.7)); }
+    100% { filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.4)); }
+  }
+
+  /* Navigation hover underline */
+  .nav-underline {
+    position: relative;
+  }
+
+  .nav-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: bottom right;
+  }
+
+  .nav-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /* AI indicator dots */
+  .ai-indicator {
+    position: relative;
+  }
+
+  .ai-indicator::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%) scale(0);
+    background: hsl(var(--ai-indicator));
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-indicator:hover::before {
+    transform: translateY(-50%) scale(1);
+    box-shadow: 0 0 8px hsl(var(--ai-indicator) / 0.6);
+  }
+
+  /* Sophisticated button styling */
+  .btn-sophisticated {
+    background: var(--gradient-primary);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-glow);
+  }
+
+  .btn-sophisticated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, hsl(var(--primary-glow) / 0.4), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn-sophisticated:hover::before {
+    left: 100%;
+  }
+
+  .btn-sophisticated:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-1px);
+  }
+
+  /* Backdrop blur effect */
+  .backdrop-blur-sophisticated {
+    backdrop-filter: blur(20px) saturate(1.5);
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
   }
 }

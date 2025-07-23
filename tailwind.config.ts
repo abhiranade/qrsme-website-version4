@@ -84,11 +84,32 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neural-float': {
+					'0%, 100%': { 
+						backgroundPosition: '0 0, 30px 30px, 60px 10px, 90px 90px' 
+					},
+					'50%': { 
+						backgroundPosition: '20px 10px, 50px 20px, 40px 30px, 70px 70px' 
+					}
+				},
+				'logo-pulse': {
+					'0%': { 
+						filter: 'drop-shadow(0 0 0px hsl(var(--primary) / 0.5))' 
+					},
+					'50%': { 
+						filter: 'drop-shadow(0 0 20px hsl(var(--primary) / 0.7))' 
+					},
+					'100%': { 
+						filter: 'drop-shadow(0 0 8px hsl(var(--primary) / 0.4))' 
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neural-float': 'neural-float 20s ease-in-out infinite',
+				'logo-pulse': 'logo-pulse 3s ease-in-out'
 			}
 		}
 	},
