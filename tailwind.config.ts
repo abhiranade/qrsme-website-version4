@@ -103,13 +103,19 @@ export default {
 					'100%': { 
 						filter: 'drop-shadow(0 0 8px hsl(var(--primary) / 0.4))' 
 					}
+				},
+				'scan': {
+					'0%': { transform: 'translateY(-100%)' },
+					'50%': { transform: 'translateY(0%)' },
+					'100%': { transform: 'translateY(100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'neural-float': 'neural-float 20s ease-in-out infinite',
-				'logo-pulse': 'logo-pulse 3s ease-in-out'
+				'logo-pulse': 'logo-pulse 3s ease-in-out',
+				'scan': 'scan 2s ease-in-out infinite'
 			}
 		}
 	},

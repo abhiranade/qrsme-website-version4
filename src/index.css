@@ -226,4 +226,15 @@ All colors MUST be HSL.
     backdrop-filter: blur(20px) saturate(1.5);
     -webkit-backdrop-filter: blur(20px) saturate(1.5);
   }
+
+  /* QR Demo scan animation */
+  @keyframes scan {
+    0% { transform: translateY(-100%); }
+    50% { transform: translateY(0%); }
+    100% { transform: translateY(100%); }
+  }
+
+  .animate-scan {
+    animation: scan 2s ease-in-out infinite;
+  }
 }
