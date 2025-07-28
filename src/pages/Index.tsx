@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import InteractiveQRDemo from '@/components/InteractiveQRDemo';
 import SolutionsShowcase from '@/components/SolutionsShowcase';
 import CompanyNarrative from '@/components/CompanyNarrative';
+import ContactSection from '@/components/ContactSection';
 import AIParticles from '@/components/ui/ai-particles';
 import AnimatedCounter from '@/components/ui/animated-counter';
 
@@ -182,6 +183,9 @@ const Index = () => {
       
       {/* Company Narrative */}
       <CompanyNarrative />
+      
+      {/* Contact Section */}
+      <ContactSection />
     </div>
   );
 };
