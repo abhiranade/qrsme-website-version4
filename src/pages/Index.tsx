@@ -6,6 +6,7 @@ import InteractiveQRDemo from '@/components/InteractiveQRDemo';
 import SolutionsShowcase from '@/components/SolutionsShowcase';
 import CompanyNarrative from '@/components/CompanyNarrative';
 import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 import AIParticles from '@/components/ui/ai-particles';
 import AnimatedCounter from '@/components/ui/animated-counter';
 
@@ -186,6 +187,9 @@ const Index = () => {
       
       {/* Contact Section */}
       <ContactSection />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
